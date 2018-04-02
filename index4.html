@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>empat</title>
+</head>
+    <body>
+        <h1>
+            <span class="animate">JavaScript Variable</span>
+        </h1>
+    
+        <p>
+            <span id="content"></span>
+        </p>
+        <script>
+            var Tony ={
+                firstname: 'Tony',
+                lastname: 'Alicea',
+                address:{
+                    street: '111 Main St.',
+                    city:'New York',
+                    state:'NY'
+                }
+            };
+            function greet(person){
+                console.log('Hi ' + person.firstname);
+            }
+            
+            greet(Tony);
+            
+            greet({
+                firstname: 'Marry',
+                lastname: 'Doe'
+            });
+            Tony.address2 = {
+                street:'333 Second St.'
+            }
+        </script>
+    </body>
+</html>
